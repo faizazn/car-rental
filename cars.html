@@ -1,233 +1,194 @@
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars list</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+    <title>Our Cars | CarRental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-</style>
 <body>
- <!-- ..................Start Navbar................... -->
- <nav>
-    <div class="container nav-container">
-        <a href="" class="logo"><img src="img/logo.png" alt="" width="150px"></a>
-        <ul class="nav-link">
-            <li><a href="index.html" style="--i:1;" class="active">Home</a></li>
-            <li><a href="cars.html" style="--i:2;">Cars</a></li>
-            <li><a href="contactus.html" style="--i:5;">Contact</a></li>
-        </ul>
-        
-    </div>
-</nav>
-<!-- ..................End Navbar................... -->
-    <section class="car-sec">
-       <div class="txt">
-        <h1 class="txt1">𝓞𝓾𝓻 𝓒𝓪𝓻𝓼</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ut officiis id quas quisquam earum reprehenderit eum nobis voluptatibus, laborum impedit ipsum, iure labore neque reiciendis, illum quae tempore ex!</p>
-      </div>
-        <div class="main-sec">
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-                <div class="details">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-car-side"></i></span>
+                <span class="logo-text">Car<span>Rental</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html" class="active">Cars</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <a href="cars.html" class="nav-cta">Book Now</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-                    <p class="car-name">Lamborghini Super Car</p>
-
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
+    <section class="cars-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Perfect Ride</h2>
+                <p>Browse our selection of premium vehicles, all maintained to the highest standards.</p>
+            </div>
+            <div class="cars-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=500&auto=format&fit=crop&q=60" alt="Lamborghini Super Car">
+                        <span class="car-badge">Popular</span>
                     </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Lamborghini Super Car</h3>
+                            <span class="car-price">$23<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 6 Seats</span>
+                            <span><i class="fa-solid fa-bolt"></i> Electric</span>
+                            <span><i class="fa-solid fa-battery-full"></i> Long Range</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> AWD</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
+                    </div>
+                </div>
 
-                    <div class="price">
-                        <p>23$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1633359064754-804ba55e733f?w=500&auto=format&fit=crop&q=60" alt="Verna">
+                    </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Hyundai Verna</h3>
+                            <span class="car-price">$33<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                            <span><i class="fa-solid fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&auto=format&fit=crop&q=60" alt="Sports Car">
+                        <span class="car-badge">New</span>
+                    </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Sports Coupe</h3>
+                            <span class="car-price">$66<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 4 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Manual</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> RWD</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&auto=format&fit=crop&q=60" alt="Muscle Car">
+                    </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Muscle Car</h3>
+                            <span class="car-price">$87<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 4 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> RWD</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&auto=format&fit=crop&q=60" alt="SUV">
+                    </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Premium SUV</h3>
+                            <span class="car-price">$46<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 7 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Diesel</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                            <span><i class="fa-solid fa-gauge-high"></i> AWD</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=500&auto=format&fit=crop&q=60" alt="Classic Car">
+                    </div>
+                    <div class="car-body">
+                        <div class="car-header">
+                            <h3>Classic Convertible</h3>
+                            <span class="car-price">$50<span>/day</span></span>
+                        </div>
+                        <div class="car-features">
+                            <span><i class="fa-solid fa-chair"></i> 2 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Manual</span>
+                            <span><i class="fa-solid fa-sun"></i> Convertible</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-primary btn-block">Book Now</a>
                     </div>
                 </div>
             </div>
-
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1633359064754-804ba55e733f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVybmF8ZW58MHx8MHx8fDA%3D"
-                    alt="">
-                <div class="details">
-
-                    <p class="car-name">Lamborghini Super Car</p>
-
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
-                    </div>
-
-                    <div class="price">
-                        <p>33$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fHww"
-                    alt="">
-                <div class="details">
-
-                    <p class="car-name">Lamborghini Super Car</p>
-
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
-                    </div>
-
-                    <div class="price">
-                        <p>66$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyfGVufDB8fDB8fHww"
-                    alt="">
-                <div class="details">
-
-                    <p class="car-name">Lamborghini Super Car</p>
-
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
-                    </div>
-
-                    <div class="price">
-                        <p>87$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
-                    alt="">
-                <div class="details">
-
-                    <p class="car-name">Lamborghini Super Car</p>
-
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
-                    </div>
-
-                    <div class="price">
-                        <p>46$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <img style="width: 345px;"
-                    src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
-                    alt="">
-                <div class="details">
-
-                    <p class="car-name">Lamborghini Super Car</p>
-                    <div class="feature">
-                        <p><i class="fa-solid fa-chair"></i> 6 Seats</p>
-                        <p><i class="fa-solid fa-charging-station"></i> Electric Charging</p>
-                        <p><i class="fa-solid fa-car-battery"></i> Long Battery Life</p>
-                        <p><i class="fa-solid fa-cable-car"></i> All-Wheel Drive</p>
-                        <p><i class="fa-solid fa-car-side"></i> Sleek Design</p>
-                        <p><i class="fa-solid fa-caravan"></i> Spacious Interior</p>
-                    </div>
-                    
-
-                    <div class="price">
-                        <p>50$/Day</p>
-                        <button><i class="fa-solid fa-circle-right"></i> <a href="booking.html">Book</a></button>
-                    </div>
-                </div>
-            </div>
-           <!-- <div class="btn">
-                <input type="button" value="View All">
-            </div>-->
         </div>
     </section>
-    <footer class="footer-distributed">
 
-        <div class="footer-left">
-            <h3>Car<span>Rental</span></h3>
-
-           <br>
-
-            <p class="footer-company-name">Copyright © 2024 <strong>Parth</strong> All rights reserved</p>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-car-side"></i></span>
+                    <span class="logo-text">Car<span>Rental</span></span>
+                </a>
+                <p class="footer-desc">We offer reliable and affordable car rental services with a diverse fleet to meet your travel needs.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> Paris, France</li>
+                    <li><i class="fa-solid fa-phone"></i> +12 34 56 78</li>
+                    <li><i class="fa-solid fa-envelope"></i> gmail@gmail.com</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>France</span>
-                    Paris</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+12 34 56 78</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">gmail@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About our website</span>
-                <strong>we offer reliable and affordable car rental services with a diverse fleet to meet your travel needs. Our mission is to provide exceptional customer service and flexible rental options, ensuring a hassle-free experience every time.</strong>
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2024 <strong>Parth</strong>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

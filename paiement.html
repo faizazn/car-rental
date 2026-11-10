@@ -3,127 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | CarRental</title>
     <link rel="stylesheet" href="style.css">
-    <!-- ..................FontAwesome Link................... -->
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
-    <title>Paiement</title>
 </head>
 <body>
-       <!-- ..................Start Navbar................... -->
-       <nav>
+    <nav class="navbar">
         <div class="container nav-container">
-            <a href="" class="logo"><img src="img/logo.png" alt="" width="150px"></a>
-            <ul class="nav-link">
-                <li><a href="index.html" style="--i:1;" class="active">Home</a></li>
-                <li><a href="cars.html" style="--i:2;">Cars</a></li>
-                <li><a href="contactus.html" style="--i:5;">Contact</a></li>
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-car-side"></i></span>
+                <span class="logo-text">Car<span>Rental</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="contactus.html">Contact</a></li>
             </ul>
-            
+            <a href="cars.html" class="nav-cta">Book Now</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
-    <!-- ..................End Navbar................... -->
-     
-    <div class="container-paiement">
-        <form action="">
-            <div class="row">
-                <div class="column">
-                    <h3 class="title">Billing Address</h3>
-                    <div class="input-box">
-                        <span>Full Name :</span>
-                        <input type="text" name="" placeholder="Enter your full name" id="">
-                    </div>
-                    <div class="input-box">
-                        <span>Email :</span>
-                        <input type="email" name="" placeholder="example@example.com" id="">
-                    </div>
-                    <div class="input-box">
-                        <span>Address :</span>
-                        <input type="text" name="" placeholder="Enter your address" id="">
-                    </div>
-                    <div class="input-box">
-                        <span>City :</span>
-                        <input type="text" name="" placeholder="Enter your city" id="">
-                    </div>
-                    <div class="flex">
-                        <div class="input-box">
-                            <span>State :</span>
-                            <input type="text" name="" placeholder="Enter your State" id="">
+
+    <section class="page-section">
+        <div class="container">
+            <div class="form-card form-card-wide">
+                <h2 class="form-title">Complete Your Payment</h2>
+                <form action="">
+                    <div class="payment-grid">
+                        <div class="payment-column">
+                            <h3 class="payment-subtitle">Billing Address</h3>
+                            <div class="form-group">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="example@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" placeholder="Enter your address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" placeholder="Enter your city" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" placeholder="Enter state" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">Zip Code</label>
+                                    <input type="text" id="zip" placeholder="Enter zip code" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <span>Zip Code :</span>
-                            <input type="number" name="" placeholder="Enter Zip code" id="">
+                        <div class="payment-column">
+                            <h3 class="payment-subtitle">Payment Details</h3>
+                            <div class="form-group">
+                                <label>Cards Accepted</label>
+                                <div class="card-icons">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                    <i class="fa-brands fa-cc-paypal"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardname">Name on Card</label>
+                                <input type="text" id="cardname" placeholder="Enter name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardnumber">Card Number</label>
+                                <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expmonth">Exp. Month</label>
+                                    <input type="text" id="expmonth" placeholder="MM" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expyear">Exp. Year</label>
+                                    <input type="text" id="expyear" placeholder="YYYY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="CVV" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column">
-                    <h3 class="title">Payment</h3>
-                    <div class="input-box">
-                        <span>Cards Accept :</span>
-                        <img src="img/imgcards.png" alt="">
-                    </div>
-                    <div class="input-box">
-                        <span>Name on card :</span>
-                        <input type="text" name="" placeholder="Enter your name on card" id="">
-                    </div>
-                    <div class="input-box">
-                        <span>Credit Card Number :</span>
-                        <input type="number" name="" placeholder="Your Credit Card Number" id="">
-                    </div>
-                    <div class="input-box">
-                        <span>Exp. Month :</span>
-                        <input type="text" name="" placeholder="Enter Exp Month" id="">
-                    </div>
-                    <div class="flex">
-                        <div class="input-box">
-                            <span>Exp. Year :</span>
-                            <input type="number" name="" placeholder="Enter Exp Year" id="">
-                        </div>
-                        <div class="input-box">
-                            <span>CVV :</span>
-                            <input type="number" name="" placeholder="Enter CVV" id="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <input type="submit" class="sub" value="Submit">
-        </form>
-    </div>
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <h3>Car<span>Rental</span></h3>
-
-           <br>
-
-            <p class="footer-company-name">Copyright © 2024 <strong>Parth</strong> All rights reserved</p>
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>France</span>
-                    Paris</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+12 34 56 78</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">gmail@gmail.com</a></p>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Payment</button>
+                </form>
             </div>
         </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About our website</span>
-                <strong>we offer reliable and affordable car rental services with a diverse fleet to meet your travel needs. Our mission is to provide exceptional customer service and flexible rental options, ensuring a hassle-free experience every time.</strong>
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-car-side"></i></span>
+                    <span class="logo-text">Car<span>Rental</span></span>
+                </a>
+                <p class="footer-desc">We offer reliable and affordable car rental services with a diverse fleet to meet your travel needs.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> Paris, France</li>
+                    <li><i class="fa-solid fa-phone"></i> +12 34 56 78</li>
+                    <li><i class="fa-solid fa-envelope"></i> gmail@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2024 <strong>Parth</strong>. All rights reserved.</p>
             </div>
         </div>
     </footer>
